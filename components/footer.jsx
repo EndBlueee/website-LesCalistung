@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp, FaMapMarkerAlt, FaEnvel
 
 export default function footer() {
     return (
-        <footer className="bg-gray-900 text-white py-8">
+        <footer className="bg-gray-900 text-white py-8 font-google">
 
             <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-8 ">
 
@@ -20,11 +20,11 @@ export default function footer() {
                     </div>
                     <div className="flex justify-start items-center gap-3">
                         <FaWhatsapp className="text-2xl text-white" />
-                        <p className="text-gray-400">0895-6357-77179</p>
+                        <p className="text-gray-400">0987-2323-0934</p>
                     </div>
                     <div className="flex justify-start items-center gap-3">
                         <FaEnvelope className="text-2xl text-white" />
-                        <p className="text-gray-400">calistung@gmail.com</p>
+                        <p className="text-gray-400">gmail@gmail.com</p>
                     </div>
                     
                 </div>

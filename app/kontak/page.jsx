@@ -1,6 +1,6 @@
 export default function Kontak() {
     return (
-        <div className="min-h-screen bg-gray-50 py-12 text-black">
+        <div className="min-h-screen bg-gray-50 py-12 text-black font-google">
             <div className="container mx-auto px-4">
                 <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Hubungi Kami</h1>
                 <div className="mx-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">

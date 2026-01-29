@@ -1,16 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+
 });
 
 export const metadata = {
@@ -22,10 +25,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${manrope.variable} ${inter.variable} antialiased`}
       >
         <Navbar />
-        <main className="pt-15">
+        <main className="pt-10 min-h-screen">
           {children}
         </main>
         <Footer />
