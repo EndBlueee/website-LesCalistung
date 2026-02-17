@@ -9,10 +9,10 @@ import { StaggerContainer, StaggerItem, ScaleUpWrapper } from "@/components/stag
 
 
 const daftarGambar = [
-  "/fotoo.webp",
-  "/fotoo1.webp",
-  "/fotoo2.webp",
-  "/fotoo3.jpeg",
+  "/beranda/gambar-beranda-1.webp",
+  "/beranda/foto-beranda-2.webp",
+  "/beranda/foto-beranda-3.webp",
+  "/beranda/foto-beranda-4.webp",
 ];
 
 export default function Home() {
@@ -33,15 +33,15 @@ export default function Home() {
 
   const DATA_TESTIMONI = [
     {
-      quote: "Awalnya si Kakak takut banget kalau disuruh baca. Setelah 2 bulan di sini, malah dia yang minta dibacain buku terus. Terima kasih Miss!",
+      quote: "Awalnya si Kakak takut banget kalau disuruh baca. Setelah 2 bulan di sini, malah dia yang minta dibacain buku terus. Terima kasih kak!",
       name: "Bunda Anisa",
-      role: "Wali Murid TK B",
+      role: "Wali Murid Les Calistung",
       image: "/fotoo.webp"
     },
     {
       quote: "Metode belajarnya sangat menyenangkan. Anak saya jadi tidak merasa terbebani saat belajar calistung.",
       name: "Ayah Budi",
-      role: "Wali Murid Kelas 1",
+      role: "Wali Murid Les Calistung",
       image: "/fotoo1.webp"
     },
     {
@@ -53,7 +53,7 @@ export default function Home() {
     {
       quote: "Anak saya jadi lebih percaya diri di sekolah. Nilai matematikanya meningkat pesat.",
       name: "Bunda Citra",
-      role: "Wali Murid SD",
+      role: "Program Privat",
       image: "/fotoo3.jpeg"
     }
   ];
@@ -103,11 +103,11 @@ export default function Home() {
     }
   };
   return (
-    <main className="flex flex-col w-full min-h-screen font-google ">
+    <main className="flex flex-col w-full min-h-screen font-google overflow-x-hidden">
 
       {/*Section Hero*/}
-      <section className="relative min-h-screen flex items-center justify-center md:justify-start">
-        <div className="absolute inset-0 z-0 ">
+      <section className="relative min-h-screen flex items-center">
+        <div className="absolute inset-0 z-0">
           {daftarGambar.map((src, index) => (
             <div key={src} className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === indexGambar ? "opacity-100" : "opacity-0"}`}>
 
@@ -122,23 +122,23 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="absolute inset-0 z-10 bg-linear-to-b from-blue-50/90 via-blue-50/60 to-transparent md:bg-linear-to-r md:from-blue-50 md:via-blue-50/90 md:to-transparent"></div>
-        <div className="container mx-auto px-4 relative z-20 pt-20 md:pt-0">
+        <div className="absolute inset-0 z-10 bg-linear-to-t md:bg-linear-to-r from-black/70 md:from-black/80 via-black/20 to-black/20" />
+        
+        <div className="container mx-auto px-4 relative z-20 pt-24 md:pt-0 pb-20 md:pb-0">
 
-          <div className="max-w-2xl px-0 md:px-4 mx-auto md:mx-0">
-            <div className="space-y-6 text-center md:text-left">
+          <div className="max-w-6xl px-0 md:px-4 mx-auto mt-5 md:mt-5">
+            <div className="space-y-4 md:space-y-6 text-center md:text-left">
               <FadeIn delay={0.1}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl text-blue-800 leading-tight font-bold drop-shadow-sm font-google">Membangun generasi Cerdas & Berkarakter</h1>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl text-white leading-[1.1] sm:leading-[1.08] font-bold drop-shadow-sm font-google">Sahabat <br /><span className="text-4xl md:text-6xl">Belajar Anak Sholeh</span></h1>
               </FadeIn>
               <FadeIn delay={0.2}>
-                <p className="text-gray-500 text-base sm:text-lg md:text-xl">Les Calistung Raudhatul Ilmi adalah tempat terbaik untuk buah hati Anda Belajar, Bermain,
-                  dan Berkembang dengan metode pembelajaran terbaik
+                <p className="text-white/90 text-sm sm:text-base md:text-xl leading-relaxed max-w-[60vh] md:max-w-[80vh] mx-auto md:mx-0">Membangun generasi yang unggul dalam prestasi akademik dan kokoh dalam nilai-nilai Islam.
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
-                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start pt-4">
-                  <Link href="/kontak" className="w-full sm:w-auto bg-blue-600 text-white rounded-lg px-6 py-4 hover:bg-blue-700 transition">Daftar Sekarang</Link>
-                  <Link href="/profil" className="w-full sm:w-auto border border-blue-600 px-6 py-4 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition">Lihat Profil</Link>
+                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
+                  <Link href="/kontak" className="w-full sm:w-auto bg-blue-600 text-white rounded-lg py-3 px-4 md:px-6 md:py-4 hover:bg-blue-700 transition">Daftar Sekarang</Link>
+                  <Link href="/profil" className="w-full sm:w-auto border border-white py-3 px-4 md:px-6 md:py-4 text-white rounded-lg hover:bg-blue-600 hover:border-blue-600 transition">Lihat Profil</Link>
                 </div>
               </FadeIn>
             </div>
@@ -229,7 +229,7 @@ export default function Home() {
 
               <div className="relative h-64 w-full overflow-hidden rounded-xl">
                 <Image
-                  src="/fotoo1.webp"
+                  src="/beranda/foto-beranda-5.webp"
                   alt="Icon"
                   fill
                   className="object-cover rounded-lg"
@@ -241,7 +241,7 @@ export default function Home() {
 
                 <h1 className="text-gray-800 text-3xl mb-3 font-bold ">Les Reguler</h1>
                 <p className="text-gray-600 mb-6 leading-relaxed">Belajar tatap muka Senin-Jumat dengan suasana kelas yang seru. Fokus pada sosialisasi & disiplin.</p>
-                <Link href="" className="text-blue-600 font-semibold hover:underline">Selengkapnya </Link>
+                <Link href="/program/kelas_reguler" className="text-blue-600 font-semibold hover:underline">Selengkapnya </Link>
               </div>
             </FadeIn>
 
@@ -253,7 +253,7 @@ export default function Home() {
                 <h1 className="text-gray-800 text-3xl mb-3 font-bold ">Les Privat</h1>
                 <p className="text-gray-600 mb-6">Layanan eksklusif guru datang ke rumah. Solusi bagi orang tua sibuk
                   yang ingin anaknya fokus belajar secara intensif 1-on-1.</p>
-                <Link href="" className="text-blue-600 font-semibold hover:underline">Selengkapnya </Link>
+                <Link href="/program/les_privat" className="text-blue-600 font-semibold hover:underline">Selengkapnya </Link>
 
               </div>
             </FadeIn>
@@ -261,7 +261,7 @@ export default function Home() {
 
               <div className="relative h-64 w-full overflow-hidden ">
                 <Image
-                  src="/fotoo.webp"
+                  src="/beranda/foto-beranda-6.jpeg"
                   alt="Icon"
                   fill
                   className="object-cover rounded-lg"
@@ -354,7 +354,7 @@ export default function Home() {
 
           <ScaleUpWrapper className="relative w-full h-auto min-h-100 md:h-130 bg-blue-50 rounded-xl overflow-hidden shadow-xl m-0 mb-10 z-0">
             <Image
-              src="/fotoo.webp"
+              src="/beranda/foto-beranda-6.webp"
               alt=""
               fill
               className="object-cover"
@@ -379,4 +379,3 @@ export default function Home() {
 
   );
 }
-

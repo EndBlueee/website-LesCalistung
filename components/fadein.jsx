@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-export default function FadeIn({ children, delay = 0, direction = "up", className = "", fullWidth = false }) {
+export default function FadeIn({ children, delay = 0, duration = 0.6, direction = "up", className = "", fullWidth = false }) {
 
     const directionOffset = {
         up: {y: 40, x: 0},
@@ -13,8 +13,8 @@ export default function FadeIn({ children, delay = 0, direction = "up", classNam
         <motion.div
             initial={{ opacity: 0, ...directionOffset[direction] }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: delay, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: duration, delay: delay, ease: "easeOut" }}
             className={className}
         >
             {children}

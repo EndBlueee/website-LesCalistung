@@ -6,7 +6,7 @@ export function StaggerContainer({ children, className, ...props }) {
         <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, amount: 0.5, margin: "-100px" }}
             variants={{
                 visible: { transition: { staggerChildren: 0.15 } }
             }}
@@ -37,7 +37,7 @@ export function ScaleUpWrapper({ children, className }) {
         <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.5, margin: "-50px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={className}
         > {children}

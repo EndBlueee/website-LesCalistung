@@ -8,9 +8,20 @@ export default function footer() {
 
             <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-8 ">
 
-                <div className="md:w-1/2">
+                <div className="">
                     <h3 className="text-xl font-bold mb-4">Les Calistung</h3>
-                    <p className="text-gray-400">Membangung generasi masa depan yang cerdas, ceria, dan berakhlak mulia</p>
+                    <p className="text-gray-400 max-w-sm">Membangung generasi masa depan yang cerdas, ceria, dan berakhlak mulia</p>
+                </div>
+                <div className="space-y-3">
+                    <h3 className="text-xl font-bold mb-4">Menu</h3>
+                    <div className="flex flex-col space-y-2">
+                        <Link href="/profil" className="text-gray-400 hover:text-white transition">Tentang Kami</Link>
+                        <Link href="/program/kelas_reguler" className="text-gray-400 hover:text-white transition">Kelas Reguler</Link>
+                        <Link href="/program/les_privat" className="text-gray-400 hover:text-white transition">Les Privat</Link>
+                        <Link href="/gambar" className="text-gray-400 hover:text-white transition">Galeri</Link>
+                        <Link href="/ppdb" className="text-gray-400 hover:text-white transition">Pendaftaran</Link>
+                        <Link href="/kontak" className="text-gray-400 hover:text-white transition">Kontak</Link>
+                    </div>
                 </div>
                 <div className="space-y-4">
                     <h3 className="text-xl font-bold mb-4">Hubungi Kami</h3>
