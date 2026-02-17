@@ -7,7 +7,7 @@ import { BsFillFileEarmarkTextFill } from "react-icons/bs";
 import FadeIn from "@/components/fadein";
 import { StaggerContainer, StaggerItem } from "@/components/staggerwrapper";
 
-export default function pendaftaran() {
+function PendaftaranContent() {
     const searchParams = useSearchParams();
     // REVISI STATE: Memecah tempat dan tanggal lahir agar lebih rapi
     const [regData, setRegData] = useState({
@@ -661,4 +661,14 @@ export default function pendaftaran() {
             </section>
         </main >
     )
+}
+
+import { Suspense } from "react";
+
+export default function PendaftaranPage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <PendaftaranContent />
+        </Suspense>
+    );
 }
