@@ -73,7 +73,7 @@ export default function Navbar() {
 
                         </div>
 
-                        <Link href="/galeri" onClick={() => setIsOpen(false)} className="text-gray-800 font-medium hover:text-blue-600">Galeri</Link>
+                        <Link href="/gambar" onClick={() => setIsOpen(false)} className="text-gray-800 font-medium hover:text-blue-600">Galeri</Link>
                         <Link href="/ppdb" onClick={() => setIsOpen(false)} className="text-gray-800 font-medium hover:text-blue-600">Pendaftaran</Link>
                         <Link href="/kontak" onClick={() => setIsOpen(false)} className="text-gray-800 font-medium hover:text-blue-600">Kontak</Link>
                     </div>

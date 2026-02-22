@@ -4,19 +4,19 @@ import { BsTelephoneFill, BsGeoAltFill, BsInstagram } from "react-icons/bs";
 export default function Kontak() {
   return (
     <main className="font-google">
-      <section>
-        <div className="relative w-full h-48 sm:h-56 md:h-110 mb-10 md:mb-12">
-          <Image
-            src="/kontak/foto-kontak-1.jpeg"
-            alt="Banner Profil"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 flex justify-center items-center bg-black/20 px-4 text-center">
-            <h1 className="text-white text-3xl md:text-5xl font-bold">Hubungi Kami</h1>
-          </div>
-        </div>
-      </section>
+       <section>
+              <div className="relative w-full h-64 md:h-110 mb-12">
+                <Image
+                  src="/kontak/foto-kontak-1.jpeg"
+                  alt="Banner Profil"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex justify-center items-center bg-black/40 ">
+                    <h1 className="text-white text-xl md:text-5xl font-semibold">Hubungi kami</h1>
+                </div>
+              </div>
+            </section>
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row md:justify-between gap-10 items-start">

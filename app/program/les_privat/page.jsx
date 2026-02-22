@@ -36,21 +36,21 @@ export default function LesPrivat() {
   return (
     <main className="font-google">
       <section>
-          <div className="relative w-full h-48 sm:h-56 md:h-110 mb-10 md:mb-12">
-            <Image
-              src="/privat/foto-privat-10.webp"
-              alt="Banner Profil"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 flex justify-center items-center bg-black/40 px-4 text-center">
-        <FadeIn duration={0.9}>
-              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-google">Program Les Privat</h1>
-        </FadeIn>
-            </div>
+        <div className="relative w-full h-64 md:h-110 mb-12">
+          <Image
+            src="/privat/foto-privat-10.webp"
+            alt="Banner Profil"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 flex justify-center items-center bg-black/40 ">
+            <FadeIn delay={0.1}>
+              <h1 className="text-white text-xl md:text-5xl font-semibold">Program Les Privat</h1>
+            </FadeIn>
           </div>
+        </div>
       </section>
-      <section className="py-14 md:py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center" viewport={{ once: true, amount: 0.1 }}>
             <StaggerItem className="w-full">
@@ -72,7 +72,7 @@ export default function LesPrivat() {
           </StaggerContainer>
         </div>
       </section>
-      <section className="py-14 md:py-20 ">
+      <section className="py-12 md:py-20 ">
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <h1 className="text-gray-800 font-semibold text-2xl sm:text-4xl mb-8 md:mb-15">Keunggulan Home Visit Kami</h1>
@@ -109,7 +109,7 @@ export default function LesPrivat() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -174,14 +174,14 @@ export default function LesPrivat() {
 
       </section>
 
-      <section className="py-14 md:py-20 bg-blue-800">
+      <section className="py-12 md:py-20 bg-blue-800">
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <h1 className="font-semibold text-2xl sm:text-4xl mb-8 md:mb-15 text-white">Jangkauan Wilayah Layanan</h1>
           </FadeIn>
           <StaggerContainer className="divide-y divide-white/50" viewport={{ once: true, amount: 0.1 }}>
             <StaggerItem>
-          <div className="border-t border-white/50"></div>
+              <div className="border-t border-white/50"></div>
               <div className="py-8 px-2">
                 <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-6">
                   <h1 className="text-white font-semibold text-xl md:col-span-3">Serua</h1>
@@ -230,7 +230,7 @@ export default function LesPrivat() {
 
 
 
-      <section className="py-12">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 md:px-19">
           <FadeIn>
             <h1 className="text-gray-800 font-semibold text-2xl sm:text-4xl mb-8 md:mb-15">Program Les Privat</h1>
@@ -238,147 +238,147 @@ export default function LesPrivat() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 items-center gap-12 justify-items-center" viewport={{ once: true, amount: 0.1 }}>
             <StaggerItem className="h-full w-full sm:w-80 md:w-92">
               <div className="h-full w-full bg-white shadow-lg rounded-lg border border-gray-200 flex flex-col overflow-hidden group">
-              <div className="relative h-60 w-full shrink-0 overflow-hidden ">
-                <Image
-                  src={"/privat/foto-privat-4.jpeg"}
-                  fill
-                  alt="Program Les Privat"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative h-60 w-full shrink-0 overflow-hidden ">
+                  <Image
+                    src={"/privat/foto-privat-4.jpeg"}
+                    fill
+                    alt="Program Les Privat"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              </div>
-              <div className="p-5 flex flex-col grow">
-                <div className="flex justify-between mb-2 items-center">
-                  <h1 className="text-xl text-gray-800 font-semibold ">Privat Calistung</h1>
-                  <span className="text-blue-500 font-light leading-7 text-sm px-2 ">Usia 3 - 7 Tahun </span>
                 </div>
-                <p className="text-gray-500 font-light leading-7 text-sm mb-2">Fokus pada pengenalan huruf membaca, menulis dan menghitung.</p>
-                <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
+                <div className="p-5 flex flex-col grow">
+                  <div className="flex justify-between mb-2 items-center">
+                    <h1 className="text-xl text-gray-800 font-semibold ">Privat Calistung</h1>
+                    <span className="text-blue-500 font-light leading-7 text-sm px-2 ">Usia 3 - 7 Tahun </span>
+                  </div>
+                  <p className="text-gray-500 font-light leading-7 text-sm mb-2">Fokus pada pengenalan huruf membaca, menulis dan menghitung.</p>
+                  <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
 
-                  <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3">
 
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Mengenal Huruf & Angka</span>
-                  </li>
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Mengenal Huruf & Angka</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Melancarkan Membaca</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Melancarkan Membaca</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Menulis</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Menulis</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Berhitung Dasar</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Berhitung Dasar</span>
+                    </li>
 
-                </ul>
-                
+                  </ul>
+
+                </div>
               </div>
-            </div>
             </StaggerItem>
             <StaggerItem className="h-full w-full sm:w-80 md:w-92">
               <div className="h-full w-full bg-white shadow-lg rounded-lg border border-gray-200 flex flex-col overflow-hidden group">
-              <div className="relative h-60 w-full shrink-0 overflow-hidden">
-                <Image
-                  src={"/privat/foto-privat-5.jpeg"}
-                  fill
-                  alt="Program Les Privat"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative h-60 w-full shrink-0 overflow-hidden">
+                  <Image
+                    src={"/privat/foto-privat-5.jpeg"}
+                    fill
+                    alt="Program Les Privat"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              </div>
-              <div className="p-5 flex flex-col grow">
-                <div className="flex justify-between items-center mb-2">
-                  <h1 className="text-xl text-gray-800 font-semibold ">Privat Mengaji</h1>
-                  <span className="text-blue-500 font-light text-sm px-2 "> Min. Usia 3 Tahun </span>
                 </div>
-                <p className="text-gray-500 font-light leading-7 text-sm mb-2">Belajar membaca Al-Qur'an dari Iqra hingga lancar (Tahsin).</p>
-                <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
+                <div className="p-5 flex flex-col grow">
+                  <div className="flex justify-between items-center mb-2">
+                    <h1 className="text-xl text-gray-800 font-semibold ">Privat Mengaji</h1>
+                    <span className="text-blue-500 font-light text-sm px-2 "> Min. Usia 3 Tahun </span>
+                  </div>
+                  <p className="text-gray-500 font-light leading-7 text-sm mb-2">Belajar membaca Al-Qur'an dari Iqra hingga lancar (Tahsin).</p>
+                  <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
 
-                  <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3">
 
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Membaca Iqra / Al-Qur'an (Tahsin)</span>
-                  </li>
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Membaca Iqra / Al-Qur'an (Tahsin)</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Hafalan Surat Pendek (Juz Amma)</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Hafalan Surat Pendek (Juz Amma)</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Praktik Wudhu & Sholat</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Praktik Wudhu & Sholat</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Doa Harian </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Dinnul Islam</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Doa Harian </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Dinnul Islam</span>
+                    </li>
 
-                </ul>
-                
+                  </ul>
+
+                </div>
               </div>
-            </div>
             </StaggerItem>
             <StaggerItem className="h-full w-full sm:w-80 md:w-92">
               <div className="h-full w-full bg-white shadow-lg rounded-lg border border-gray-200 flex flex-col overflow-hidden group">
-              <div className="relative h-60 w-full shrink-0 overflow-hidden">
-                <Image
-                  src={"/privat/foto-privat-6.jpeg"}
-                  fill
-                  alt="Program Les Privat"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative h-60 w-full shrink-0 overflow-hidden">
+                  <Image
+                    src={"/privat/foto-privat-6.jpeg"}
+                    fill
+                    alt="Program Les Privat"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              </div>
-
-              <div className="p-5 flex flex-col grow">
-                <div className="flex justify-between items-center mb-2">
-                  <h1 className="text-xl text-gray-800 font-semibold ">Mapel Sekolah SD</h1>
-                  <span className="text-blue-500 font-light text-sm px-2">Kelas 1 - 6 SD </span>
                 </div>
-                <p className="text-gray-500 font-light leading-7 text-sm mb-2">Membantu anak memahami PR Sekolah, persiapan ulangan harian/PTS/PAS, dan mendalami materi sulit.</p>
-                <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
 
-                  <li className="flex items-start gap-3">
+                <div className="p-5 flex flex-col grow">
+                  <div className="flex justify-between items-center mb-2">
+                    <h1 className="text-xl text-gray-800 font-semibold ">Mapel Sekolah SD</h1>
+                    <span className="text-blue-500 font-light text-sm px-2">Kelas 1 - 6 SD </span>
+                  </div>
+                  <p className="text-gray-500 font-light leading-7 text-sm mb-2">Membantu anak memahami PR Sekolah, persiapan ulangan harian/PTS/PAS, dan mendalami materi sulit.</p>
+                  <ul className="space-y-3 mb-6 text-sm font-light text-gray-500">
 
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Pendampingan PR Sekolah</span>
-                  </li>
+                    <li className="flex items-start gap-3">
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Persiapan Ulangan (PH/PTS/PAS)</span>
-                  </li>
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Pendampingan PR Sekolah</span>
+                    </li>
 
-                  <li className="flex items-start gap-3">
-                    <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
-                    <span>Review Materi Sulit</span>
-                  </li>
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Persiapan Ulangan (PH/PTS/PAS)</span>
+                    </li>
+
+                    <li className="flex items-start gap-3">
+                      <FaCheckCircle className="text-green-500 mt-0.5 shrink-0" />
+                      <span>Review Materi Sulit</span>
+                    </li>
 
 
-                </ul>
-                
+                  </ul>
+
+                </div>
               </div>
-            </div>
             </StaggerItem>
           </StaggerContainer>
         </div>
       </section>
-      <section className="py-12">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <FadeIn>
             <h1 className="text-gray-800 font-semibold text-2xl sm:text-4xl mb-8 md:mb-15">Paket Les Privat</h1>
@@ -387,68 +387,68 @@ export default function LesPrivat() {
             <StaggerItem className="h-full w-full sm:w-80 md:w-92">
               <div className="h-full w-full bg-white shadow-lg rounded-lg p-8 flex flex-col border border-gray-200">
 
-              <div className="grow flex flex-col">
-                <h3 className="text-gray-500 mb-6 md:mb-16">Paket 2x per Minggu</h3>
-                <h1 className="text-blue-500 text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 300.000 <span className="text-gray-500 text-sm">/bulan</span></h1>
-                <div className="space-y-2 text-gray-500 text-sm font-extralight">
+                <div className="grow flex flex-col">
+                  <h3 className="text-gray-500 mb-6 md:mb-16">Paket 2x per Minggu</h3>
+                  <h1 className="text-blue-500 text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 300.000 <span className="text-gray-500 text-sm">/bulan</span></h1>
+                  <div className="space-y-2 text-gray-500 text-sm font-extralight">
 
-                  <div className="flex items-center gap-2">
-                    <BsCheckCircle size={16} />
-                    <p>Durasi 60 Menit per sesi</p>
+                    <div className="flex items-center gap-2">
+                      <BsCheckCircle size={16} />
+                      <p>Durasi 60 Menit per sesi</p>
+                    </div>
+
                   </div>
-                  
-                </div>
-                <div className="mt-auto pt-8">
-                  <Link href="/ppdb?paket=2x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  <div className="mt-auto pt-8">
+                    <Link href="/ppdb?paket=2x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  </div>
                 </div>
               </div>
-            </div>
             </StaggerItem>
             <StaggerItem className="h-full w-full sm:w-80 md:w-94">
               <div className="h-full w-full bg-blue-600 shadow-lg rounded-lg p-8 sm:p-10 flex flex-col border border-gray-200">
 
-              <div className="grow flex flex-col">
-                <h3 className="text-white mb-6 md:mb-17">Paket 3x per Minggu</h3>
-                <h1 className="text-white text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 400.000 <span className="text-gray-200 text-sm">/bulan</span></h1>
-                <div className="space-y-2 text-white text-sm font-extralight">
+                <div className="grow flex flex-col">
+                  <h3 className="text-white mb-6 md:mb-17">Paket 3x per Minggu</h3>
+                  <h1 className="text-white text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 400.000 <span className="text-gray-200 text-sm">/bulan</span></h1>
+                  <div className="space-y-2 text-white text-sm font-extralight">
 
-                  <div className="flex items-center gap-2">
-                    <BsCheckCircle size={16} />
-                    <p>Durasi 30 Menit per sesi</p>
+                    <div className="flex items-center gap-2">
+                      <BsCheckCircle size={16} />
+                      <p>Durasi 30 Menit per sesi</p>
+                    </div>
+
                   </div>
-                  
-                </div>
-                <div className="mt-auto pt-6">
-                  <Link href="/ppdb?paket=3x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  <div className="mt-auto pt-6">
+                    <Link href="/ppdb?paket=3x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  </div>
                 </div>
               </div>
-            </div>
             </StaggerItem>
             <StaggerItem className="h-full w-full sm:w-80 md:w-92">
               <div className="h-full w-full bg-white shadow-lg rounded-lg p-8 flex flex-col border border-gray-200">
 
-              <div className="grow flex flex-col">
-                <h3 className="text-gray-500 mb-6 md:mb-16">Paket 4x per Minggu</h3>
-                <h1 className="text-blue-500 text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 500.000 <span className="text-gray-500 text-sm">/bulan</span></h1>
-                <div className="space-y-2 text-gray-500 text-sm font-extralight">
+                <div className="grow flex flex-col">
+                  <h3 className="text-gray-500 mb-6 md:mb-16">Paket 4x per Minggu</h3>
+                  <h1 className="text-blue-500 text-3xl sm:text-4xl mb-6 md:mb-15 font-bold">Rp 500.000 <span className="text-gray-500 text-sm">/bulan</span></h1>
+                  <div className="space-y-2 text-gray-500 text-sm font-extralight">
 
-                  <div className="flex items-center gap-2">
-                    <BsCheckCircle size={16} />
-                    <p>Durasi 30 Menit per sesi</p>
+                    <div className="flex items-center gap-2">
+                      <BsCheckCircle size={16} />
+                      <p>Durasi 30 Menit per sesi</p>
+                    </div>
+
                   </div>
-                  
-                </div>
-                <div className="mt-auto pt-6">
-                  <Link href="/ppdb?paket=4x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  <div className="mt-auto pt-6">
+                    <Link href="/ppdb?paket=4x#les-privat" className="block w-full bg-blue-400 hover:bg-blue-400 text-white text-sm font-semibold px-2 py-3 text-center rounded-lg transition-all">Daftar</Link>
+                  </div>
                 </div>
               </div>
-            </div>
             </StaggerItem>
 
           </StaggerContainer>
         </div>
       </section>
-      <section className="py-12">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <FadeIn>
             <h1 className="text-gray-800 font-semibold text-center text-2xl sm:text-4xl mb-8 md:mb-15">Pertanyaan Umum</h1>
@@ -492,9 +492,9 @@ export default function LesPrivat() {
               <p className="text-blue-100 text-sm sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl font-light">Dapatkan jadwal fleksibel dan guru terbaik datang kerumah</p>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="flex flex-col sm:flex-row gap-4 ">
-                <Link href="/kontak" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold py-3 px-6 rounded-3xl shadow-lg ">Hubungi</Link>
-                <Link href="/ppdb#les-privat" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold py-3 px-6 rounded-3xl transition-all">Daftar</Link>
+              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <Link href="/kontak" className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold py-3 px-6 rounded-3xl shadow-lg text-center">Hubungi</Link>
+                <Link href="/ppdb#les-privat" className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold py-3 px-6 rounded-3xl transition-all text-center">Daftar</Link>
               </div>
             </FadeIn>
           </div>

@@ -7,20 +7,21 @@ export default function Profil() {
   return (
     <main className="min-h-screen font-google">
       <section>
-          <div className="relative w-full h-48 sm:h-56 md:h-110 mb-10 md:mb-12">
-            <Image
-              src="/profil/foto-profil-1.jpeg"
-              alt="Banner Profil"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 flex justify-center items-center bg-blue-900/40 px-4 text-center">
-        <FadeIn duration={1} delay={0.1}>
-              <h1 className="text-white text-3xl md:text-5xl font-bold">Tentang Kami</h1>
-        </FadeIn>
-            </div>
-          </div>
-      </section>
+              <div className="relative w-full h-64 md:h-110 mb-12">
+                <Image
+                  src="/profil/foto-profil-1.jpeg"
+                  alt="Banner Profil"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex justify-center items-center bg-black/40 ">
+                  <FadeIn delay={0.1}>
+                    <h1 className="text-white text-xl md:text-5xl font-semibold">Tentang Kami</h1>
+                  </FadeIn>
+                </div>
+              </div>
+            </section>
+      
 
       <section className="container mx-auto px-4 mb-14 md:mb-20">
         <StaggerContainer viewport={{ once: true, amount: 0.5 }} className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -54,28 +55,20 @@ export default function Profil() {
         </StaggerContainer>
       </section>
 
-      <section className="min-h-[70vh] md:min-h-screen">
-        <div className="relative min-h-[70vh] md:h-screen flex items-center justify-center py-12 md:py-0 px-4 mx-auto">
-          <Image
-            src="/fotoo.webp"
-            alt="background visi misi"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
 
             <StaggerContainer viewport={{ once: true, amount: 0.5 }} className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <StaggerItem>
                 <div className="relative ">
                   <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
-                  <h2 className="text-2xl md:text-4xl text-white mb-6 font-bold leading-tight">
+                  <h2 className="text-2xl md:text-4xl text-gray-800 mb-6 font-bold leading-tight">
                     Visi & Misi <br />
-                    <span>Raudhatul Ilmi</span>
+                    <span className="text-blue-800">Raudhatul Ilmi</span>
                   </h2>
                   <div className="">
-                    <h3 className="text-lg sm:text-xl font-bold mb-2 text-blue-200">Visi Kami</h3>
-                    <p className="text-white text-base sm:text-lg max-w-md font-bold leading-relaxed">Komitmen kami dalam membangun pondasi pendidikan terbaik untuk masa depan buah hati Anda.</p>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 text-blue-600">Visi Kami</h3>
+                    <p className="text-gray-600 text-base sm:text-lg max-w-md font-semibold leading-relaxed">Komitmen kami dalam membangun pondasi pendidikan terbaik untuk masa depan buah hati Anda.</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -121,11 +114,10 @@ export default function Profil() {
                 </StaggerItem>
               </div>
             </StaggerContainer>
-          </div>
         </div>
       </section>
 
-      <section className="py-14 md:py-20 bg-gray-100">
+      <section className="py-14 md:py-20 bg-white">
         <div className="container mx-auto px-4">
 
           <FadeIn>

@@ -18,6 +18,16 @@ const daftarGambar = [
 export default function Home() {
 
   const [indexGambar, setIndexGambar] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    setIsDesktop(mediaQuery.matches);
+    const handler = (e) => setIsDesktop(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
 
 
   useEffect(() => {
@@ -36,25 +46,21 @@ export default function Home() {
       quote: "Awalnya si Kakak takut banget kalau disuruh baca. Setelah 2 bulan di sini, malah dia yang minta dibacain buku terus. Terima kasih kak!",
       name: "Bunda Anisa",
       role: "Wali Murid Les Calistung",
-      image: "/fotoo.webp"
     },
     {
       quote: "Metode belajarnya sangat menyenangkan. Anak saya jadi tidak merasa terbebani saat belajar calistung.",
       name: "Ayah Budi",
       role: "Wali Murid Les Calistung",
-      image: "/fotoo1.webp"
     },
     {
       quote: "Sangat terbantu dengan guru yang datang ke rumah. Jadwal fleksibel dan progres anak sangat terlihat.",
       name: "Mama Rara",
       role: "Program Privat",
-      image: "/fotoo2.webp"
     },
     {
       quote: "Anak saya jadi lebih percaya diri di sekolah. Nilai matematikanya meningkat pesat.",
       name: "Bunda Citra",
       role: "Program Privat",
-      image: "/fotoo3.jpeg"
     }
   ];
 
@@ -136,9 +142,9 @@ export default function Home() {
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
-                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
-                  <Link href="/kontak" className="w-full sm:w-auto bg-blue-600 text-white rounded-lg py-3 px-4 md:px-6 md:py-4 hover:bg-blue-700 transition">Daftar Sekarang</Link>
-                  <Link href="/profil" className="w-full sm:w-auto border border-white py-3 px-4 md:px-6 md:py-4 text-white rounded-lg hover:bg-blue-600 hover:border-blue-600 transition">Lihat Profil</Link>
+                <div className="flex flex-col items-center sm:flex-row gap-3 md:gap-4 pt-4">
+                  <Link href="/kontak" className="w-auto bg-blue-600 text-white rounded-lg py-3 px-4 md:px-6 md:py-4 hover:bg-blue-700 transition">Daftar Sekarang</Link>
+                  <Link href="/profil" className="w-auto border border-white py-3 px-4 md:px-6 md:py-4 text-white rounded-lg hover:bg-blue-600 hover:border-blue-600 transition">Lihat Profil</Link>
                 </div>
               </FadeIn>
             </div>
@@ -214,7 +220,7 @@ export default function Home() {
       </section>
 
       {/*Section program unggulan*/}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 md:py-20">
         <div className="container mx-auto px-4">
           <FadeIn className="flex flex-col space-y-4 items-center mb-12">
             <h1 className="text-gray-800 text-4xl md:text-5xl font-bold text-center">Pilih Cara Belajar <span className="text-blue-600">Favoritmu</span></h1>
@@ -246,7 +252,7 @@ export default function Home() {
             </FadeIn>
 
 
-            <FadeIn direction="right" delay={0.3} className="md:col-span-2 bg-linear-to-tr from-orange-100 to-white h-64 w-full rounded-lg border border-gray-100 flex justify-between items-center p-8 shadow-sm hover:shadow-md transition">
+            <FadeIn direction={isDesktop ? "right" : "left"} delay={0.3} className="order-2 md:order-1 md:col-span-2 bg-linear-to-tr from-orange-100 to-white h-64 w-full rounded-lg border border-gray-100 flex justify-between items-center p-8 shadow-sm hover:shadow-md transition">
 
               <div className="max-w-md">
 
@@ -257,7 +263,7 @@ export default function Home() {
 
               </div>
             </FadeIn>
-            <FadeIn direction="left" delay={0.4} className="bg-blue-50 h-64 w-full rounded-lg flex justify-center items-center shadow-sm">
+            <FadeIn direction={isDesktop ? "left" : "right"} delay={0.4} className="order-1 md:order-2 bg-blue-50 h-64 w-full rounded-lg flex justify-center items-center shadow-sm">
 
               <div className="relative h-64 w-full overflow-hidden ">
                 <Image
@@ -299,18 +305,9 @@ export default function Home() {
                     "{item.quote}"
                   </p>
                   <div className="flex items-center gap-4">
-                    <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden bg-gray-200 shrink-0">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-gray-800 font-bold text-sm md:text-base">{item.name}</h4>
                       <p className="text-gray-500 text-xs md:text-sm">{item.role}</p>
-
                     </div>
                   </div>
                 </StaggerItem>
@@ -348,11 +345,11 @@ export default function Home() {
       </section>
 
       {/*section terakhir*/}
-      <section className="py-12">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 flex justify-center">
 
 
-          <ScaleUpWrapper className="relative w-full h-auto min-h-100 md:h-130 bg-blue-50 rounded-xl overflow-hidden shadow-xl m-0 mb-10 z-0">
+          <ScaleUpWrapper className="relative w-full h-96 md:h-130 bg-blue-50 rounded-xl overflow-hidden shadow-xl m-0 mb-10 z-0">
             <Image
               src="/beranda/foto-beranda-6.webp"
               alt=""
@@ -360,12 +357,12 @@ export default function Home() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
-            <div className="relative z-10 flex flex-col justify-center items-start h-full p-8 md:px-20 space-y-4">
+            <div className="relative z-10 flex flex-col justify-center items-center md:items-start h-full p-6 md:px-20 space-y-4">
               <FadeIn delay={0.3} className="space-y-6 w-full text-center md:text-left">
                 <h1 className="text-white text-3xl md:text-5xl font-bold">Siap Memberikan yang <br /> Terbaik?</h1>
-                <p className="text-base md:text-lg max-w-2xl">Bergabunglah bersama kami sekarang dan mewujudkan impian buah hati Anda</p>
+                <p className="text-white/90 text-base md:text-lg max-w-2xl mx-auto md:mx-0">Bergabunglah bersama kami sekarang dan mewujudkan impian buah hati Anda</p>
                 <div className="pt-2">
-                  <Link href="/kontak" className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-full ">Hubungi Kami</Link>
+                  <Link href="/kontak" className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:py-4 rounded-full transition-colors">Hubungi Kami</Link>
                 </div>
               </FadeIn>
             </div>

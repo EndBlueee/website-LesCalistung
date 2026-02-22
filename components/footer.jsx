@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
@@ -27,11 +26,11 @@ export default function footer() {
                     <h3 className="text-xl font-bold mb-4">Hubungi Kami</h3>
                     <div className="flex justify-start items-center gap-3">
                         <FaMapMarkerAlt className="text-2xl text-white" />
-                        <p className="text-gray-400">Jl. Serua raya, Depok</p>
+                        <p className="text-gray-400">Jl. Serua raya, Kav Dpr, RT02/RW01,<br /> Bojongsari Kota Depok</p>
                     </div>
                     <div className="flex justify-start items-center gap-3">
                         <FaWhatsapp className="text-2xl text-white" />
-                        <p className="text-gray-400">0987-2323-0934</p>
+                        <p className="text-gray-400">+62 838-0618-4245</p>
                     </div>
                     <div className="flex justify-start items-center gap-3">
                         <FaEnvelope className="text-2xl text-white" />

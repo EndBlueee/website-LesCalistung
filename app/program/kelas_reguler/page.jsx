@@ -76,7 +76,7 @@ const faqs = [
           />
           <div className="absolute inset-0 flex justify-center items-center bg-black/40 ">
             <FadeIn delay={0.1}>
-              <h1 className="text-white text-3xl md:text-5xl font-semibold">Program Kelas Reguler</h1>
+              <h1 className="text-white text-xl md:text-5xl font-semibold">Program Kelas Reguler</h1>
             </FadeIn>
           </div>
         </div>
@@ -153,12 +153,14 @@ const faqs = [
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between gap-10">
 
-            <FadeIn duration={0.8} className="w-full">
+            <FadeIn duration={0.8} className="w-full ">
               <div className="w-full">
                 <div className="border-b border-gray-200 space-y-4 pb-4">
                   <h1 className="text-gray-900 font-bold text-2xl md:text-4xl">Target Kompetensi Lulusan</h1>
-                  <p className="text-gray-500 font-light leading-7 text-sm sm:text-base mb-6">Mencetak lulusan yang tidak hanya siap belajar, tetapi juga mandiri dan berakhlak mulia menuju gerbang SD.</p>
+                  <p className="order-1 md:order-2 text-gray-500 font-light leading-7 text-sm sm:text-base mb-6">Mencetak lulusan yang tidak hanya siap belajar, tetapi juga mandiri dan berakhlak mulia menuju gerbang SD.</p>
                 </div>
+              
+                
                 <StaggerContainer className="text-gray-600 text-sm font-light grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                   <StaggerItem>
                     <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg">
@@ -187,7 +189,7 @@ const faqs = [
                 </StaggerContainer>
               </div>
             </FadeIn>
-            <FadeIn duration={0.8} delay={0.4} direction="left" className="w-full">
+            <FadeIn duration={0.8} delay={0.4} direction="left" className="w-full ">
               <div className="relative w-full h-64 md:h-92 overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src="/reguler/foto-reguler-3.webp"
@@ -479,15 +481,15 @@ const faqs = [
           <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
           <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-4">
             <FadeIn>
-              <h2 className="text-white font-bold text-2xl md:text-5xl mb-4 max-w-3xl leading-tight">Belajar Lebih Seru dan Efektif di Kelas Reguler</h2>
+              <h2 className="text-white font-bold text-3xl md:text-5xl mb-4 max-w-3xl leading-tight">Belajar Lebih Seru dan Efektif di Kelas Reguler</h2>
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-blue-100 text-sm sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl font-light">Pahami materi sekolah dengan kurikulum terstruktur dan diskusi interaktif bersama teman sebaya.</p>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto px-4">
-                <Link href="/kontak" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold py-3 px-6 rounded-3xl shadow-lg text-center">Tanya Program</Link>
-                <Link href="/ppdb#form-kelas-reguler" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold py-3 px-6 rounded-3xl transition-all text-center">Daftar Sekarang</Link>
+              <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                <Link href="/kontak" className="w-full md:w-auto bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold py-3 px-6 rounded-3xl shadow-lg text-center">Tanya Program</Link>
+                <Link href="/ppdb#form-kelas-reguler" className="w-full md:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold py-3 px-6 rounded-3xl transition-all text-center">Daftar Sekarang</Link>
               </div>
             </FadeIn>
           </div>
